@@ -2,14 +2,18 @@ import React from 'react'
 import {links, social} from './data'
 import Photo from '../images/logo.svg'
 import {FaTimes} from 'react-icons/fa'
+import { useGlobalContext } from './cotext'
 
 
 function Sidebar() {
+
+  const {sidebar, closeSidebar} = useGlobalContext()
+
   return (
-    <div className={`sidebar show-sidebar`}>
+    <div className={`${sidebar ? 'sidebar show-sidebar' : 'sidebar'}`}>
       <div className='sidebar-header'>
         <img src={Photo} alt='logo'/>
-        <button>
+        <button className='sidebar-btn' onClick={closeSidebar}>
         <FaTimes />
         </button>
       </div>
@@ -27,6 +31,9 @@ function Sidebar() {
             )
           })}
         </ul>
+        {/* <div>
+          
+        </div> */}
         <ul className='social-icons'>
           {social.map((link) => {
             const {id, url, icon} = link
