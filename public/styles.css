@@ -7,3 +7,115 @@ body {
     margin: 0;
     font-family: roboto;
 }
+
+/* .home-container {
+    display: grid;
+} */
+
+.main-container {
+    /* position: relative; */
+    position: fixed;
+    margin: 20px;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+.bars {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    color: rgb(69, 147, 140);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+/* .modal-btn-contianer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.modal-btn {
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    transition: all 0.3s linear;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    left: 43%;
+    top: 43%;
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    position: fixed;
+}
+
+.modal-btn:hover {
+    color: black;
+    background: transparent;
+}
+
+.modal-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(155, 154, 154, 0.5);
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+    visibility: hidden;
+    z-index: -1;
+}
+
+.show-modal {
+    visibility: visible;
+    z-index: 10;
+  }
+
+.modal-container {
+    background: #fff;
+    border-radius: 0.25rem;
+    width: 90vw;
+    height: 30vh;
+    max-width: 1170px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+
+}
+
+.close-modal {
+    font-size: 1.3rem;
+    background: transparent;
+    border-color: transparent;
+    color: #b41b44;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+
+  }
