@@ -21,5 +21,3 @@ function Modal() {
 }
 
 export default Modal
-
-//show-modal

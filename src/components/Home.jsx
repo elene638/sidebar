@@ -1,11 +1,10 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa'
-import { Appcontext, useGlobalContext } from './cotext'
+import { useGlobalContext } from './cotext'
 
 function Home() {
 
   const {openModal, openSidebar} = useGlobalContext()
-  //console.log(data);
 
   return (
     <div className='home-container'>
